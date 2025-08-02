@@ -23,3 +23,12 @@ Cypress.Commands.add(
     login();
   }
 );
+
+Cypress.Commands.add(
+  "logout",
+  () => {
+      cy.get(".qa-user-avatar").click(); // vamos clicar onde tiver essa classe
+      cy.contains('Sign out').click(); //vamos clicar onde contem o texto 
+}
+  
+);
